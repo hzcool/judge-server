@@ -1,0 +1,32 @@
+{
+    "files.autoSave": "afterDelay",
+    "go.buildOnSave": "workspace",
+    "go.lintOnSave": "package",
+    "go.vetOnSave": "package",
+    "go.formatTool": "goreturns",
+    "go.goroot": "/usr/local/go",
+    "go.useLanguageServer": true,
+    "go.alternateTools": {
+      "go-langserver": "gopls",
+    },
+    "go.languageServerExperimentalFeatures": {
+      "format": true,
+      "autoComplete": true
+    },
+    "[go]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+    },
+    "go.autocompleteUnimportedPackages": true,
+    "go.gocodePackageLookupMode": "go",
+    "go.gotoSymbol.includeImports": true,
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.inferGopath": true,
+    "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+    "files.associations": {
+      "*.go": "go",
+      "iostream": "cpp",
+      "seccomp.h": "c"
+    },
+}

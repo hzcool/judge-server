@@ -1,0 +1,20 @@
+version: '3'
+services: 
+
+    judge-server:
+        image: registry.cn-shanghai.aliyuncs.com/aliyun_hzcool/judger-server
+        restart: always
+        read_only: true
+        container_name: judge-server
+        tmpfs:
+            - /tmp
+        environment: 
+            - GOPATH=/
+            - SERVICE_PORT=:8001
+            - ACCESS_TOKEN=123
+        volumes: 
+            - ./data/test_case:/src/test_case
+            - ./data/log:/src/log
+            - ./data/tmp:/src/tmp
+        ports: 
+            - 8000:8001
