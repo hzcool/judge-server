@@ -1,4 +1,4 @@
-FROM 976d9160e30942228bbcb9a5fb4b2ac82d7aa63c034e073205a776692167937c
+FROM registry.cn-shanghai.aliyuncs.com/aliyun_hzcool/lang_env
 
 
 WORKDIR /src
